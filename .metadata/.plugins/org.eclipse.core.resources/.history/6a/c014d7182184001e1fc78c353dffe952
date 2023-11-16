@@ -1,0 +1,15 @@
+package SocketHilos;
+
+public class ServidorArchivos {
+
+	//1. declaramos variables
+	
+	
+	
+	//2. Metodo run
+	@Override
+	public void run(){
+		
+		
+	}// fin del metodo run
+} // fin de la clase servidor ...

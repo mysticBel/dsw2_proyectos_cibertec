@@ -1,0 +1,64 @@
+package SocketHilos;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServidorArchivos {
+
+	//1. declaramos variables
+	private int puerto;
+	private boolean parar = false;
+	
+	//2. Creamos un constructor
+	public ServidorArchivos(int puer){
+		this.puerto= puer;
+	} //fin constructor
+	
+	// setter y getter
+	public int getPuerto(){
+		return puerto;
+	}
+	
+	public void setPuerto(int puerto){
+		this.puerto = puerto;
+	}
+	
+	// creamos un metodo
+	public void ParaServidor(){
+		this.parar = true;
+	}
+	
+	//3. Metodo run
+
+	
+	public void run(){
+		ServerSocket servidor = null;
+		
+		//ponemos servidor a la escucha
+		try{
+			
+			servidor = new ServerSocket(this.puerto);
+			// emitimos mensaje por consola
+			System.out.println("Esperando peticiones en el puerto " + this.puerto);
+			
+			//aplicamos un bucle
+			// mientras que no llamemos al estado parar, recibimos clientes
+			// y creamos hilos para cada cliente..
+			while(!parar){
+				Socket nuevoCliente = servidor.accept();
+			} //fin del bucle
+			//cerramos el servidor dsp de salir del bucle
+			servidor.close();
+			//emitimos mensaje por consola
+			System.out.println("Servidor cerrado correctamente");
+			
+		}catch(IOException e){
+			System.out.println("Servidor cerrado por errores ");
+			e.printStackTrace();
+		}finally{
+			
+		} // fin del finally
+		
+	}// fin del metodo run
+} // fin de la clase servidor ...

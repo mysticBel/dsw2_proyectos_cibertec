@@ -1,0 +1,29 @@
+package SocketHilos;
+
+public class ServidorArchivos {
+
+	//1. declaramos variables
+	private int puerto;
+	private boolean parar = false;
+	
+	//2. Creamos un constructor
+	public ServidorArchivos(int puer){
+		this.puerto= puer;
+	} //fin constructor
+	
+	// setter y getter
+	public int getPuerto(){
+		return puerto;
+	}
+	
+	public void setPuerto(int puerto){
+		this.puerto = puerto;
+	}
+	
+	//3. Metodo run
+	@Override
+	public void run(){
+		
+		
+	}// fin del metodo run
+} // fin de la clase servidor ...
