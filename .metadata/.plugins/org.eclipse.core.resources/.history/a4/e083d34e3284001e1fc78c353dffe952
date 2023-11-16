@@ -1,0 +1,27 @@
+package DataXml;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ClassTestJAXB {
+
+	// Metodo principal
+	public static void main(String[] args) {
+		// Instanciamos las respectivas clases
+		List<ClassCliente> list = new ArrayList<ClassCliente>();
+		ClassCliente cliente = new ClassCliente();
+		
+		//agregamos cliente
+		cliente.setIdcliente(100);
+		cliente.setNombre("Rosa Maria");
+		cliente.setApellido("Perez Gomes");
+		
+		
+		
+		
+		
+		
+
+	} // fin de metodo principal
+
+} // fin de clase test
