@@ -1,0 +1,20 @@
+package HilosSincronizacion;
+
+public class ClassThreadSincronizacionV  extends Thread{
+
+	@Override
+	public void run(){
+		//aplicamos un bucle para 8
+		for(int n=1;n<=8;n++){
+			//imprimimos por pantalla
+			System.out.println("R");
+			try {
+				ClassThreadSincronizacionV.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}   //fin del catch....
+			
+		}  //fin del bucle for...
+	}//fin del metodo run....
+} //fin de la clase...

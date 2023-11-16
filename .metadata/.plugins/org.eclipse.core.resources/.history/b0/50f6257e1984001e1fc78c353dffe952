@@ -1,0 +1,18 @@
+package HilosSincronizacion;
+
+public class ClassThreadTESTsincronizacion {
+
+	public static void main(String[] args) {
+		// Realizamos las respectivas instancias
+		ClassThreadSincronizacionI hilo1 = new ClassThreadSincronizacionI();
+		ClassThreadSincronizacionII hilo2 = new ClassThreadSincronizacionII();
+		ClassThreadSincronizacionIII hilo3 = new ClassThreadSincronizacionIII();
+		ClassThreadSincronizacionIV hilo4 = new ClassThreadSincronizacionIV();
+		ClassThreadSincronizacionV hilo5 = new ClassThreadSincronizacionV();
+		ClassThreadSincronizacionVI hilo6 = new ClassThreadSincronizacionVI();
+		ClassThreadSincronizacionVII hilo7 = new ClassThreadSincronizacionVII();
+		ClassThreadSincronizacionVIII hilo8 = new ClassThreadSincronizacionVIII();
+
+	} // fin del metodo principal
+
+}// fin de la clase

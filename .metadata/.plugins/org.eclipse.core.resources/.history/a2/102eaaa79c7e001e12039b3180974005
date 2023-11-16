@@ -1,0 +1,10 @@
+package SocketServidor;
+
+public class ClassSocketServidor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

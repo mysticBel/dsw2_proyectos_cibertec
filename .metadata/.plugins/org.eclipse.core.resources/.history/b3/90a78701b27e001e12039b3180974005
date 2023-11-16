@@ -1,0 +1,6 @@
+package Hilos;
+
+public class ClassHerenciaHilos extends Thread {
+
+	//
+}

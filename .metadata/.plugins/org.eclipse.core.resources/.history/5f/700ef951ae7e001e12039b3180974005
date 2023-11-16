@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ProyectoDsw2-Varios">
+        <property name="context-root" value="ProyectoDsw2-Varios"/>
+        <property name="java-output-path" value="/ProyectoDsw2-Varios/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;y&apos; in &apos;Hilos.ClassInterfazHilos.run()&apos; to &apos;w&apos;&#x0D;&#x0A;- Original project: &apos;ProyectoDsw2-Varios&apos;&#x0D;&#x0A;- Original element: &apos;Hilos.ClassInterfazHilos.run().y&apos;&#x0D;&#x0A;- Renamed element: &apos;y&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;y&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Hilos{ClassInterfazHilos.java[ClassInterfazHilos~run@y!727!733!731!731!I!0!false" name="w" references="true" stamp="1699501033931" version="1.0"/>
+</session>
