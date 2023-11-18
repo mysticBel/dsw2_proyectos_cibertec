@@ -1,0 +1,32 @@
+package DataXml;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
+public class ClassLeerXml {
+	// creamos el metodo leer datos xml
+	public void LeerXml(){
+		
+		//Pide Try-catch, aplicamos JAXB ...
+		try {
+			JAXBContext leerxml = JAXBContext.newInstance(ClassTipoCliente.class);
+			// aplicar una clase que nos permite leer el archivo xml
+			// y vinculamos la clase que nos permite leer el archivo xml
+			Unmarshaller leer = leerxml.createUnmarshaller();
+			//
+			//Aplicamos la clse File para ubicar el archivo que se va a dar lectura ..
+			File leerarchivoxml = new File("D:/archivoxml/cliente.xml");
+			// creamos un objeto de tipo ClassTipoCliente - casteo
+			ClassTipoCliente tipoclleer = (ClassTipoCliente)leer.unmarshal(leerarchivoxml);
+			
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}// fin de metodo LeerXml
+	
+}// fin de clase

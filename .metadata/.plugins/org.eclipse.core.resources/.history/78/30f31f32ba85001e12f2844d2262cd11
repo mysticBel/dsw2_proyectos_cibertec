@@ -1,0 +1,12 @@
+package DataXml;
+
+import javax.xml.bind.JAXBContext;
+
+public class ClassLeerXml {
+	// creamos el metodo leer datos xml
+	public void LeerXml(){
+		JAXBContext leerxml = JAXBContext.newInstance(ClassTipoCliente.class);
+		
+	}// fin de metodo LeerXml
+	
+}// fin de clase
